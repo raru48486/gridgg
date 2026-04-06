@@ -1,0 +1,37 @@
+table.gridgg_table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+
+  tr.gridgg_selected {
+    > th {
+      background-color: darkgray;
+      color: white;
+    }
+    > td {
+      background-color: Highlight;
+      color: HighlightText;
+    }
+  }
+
+  th,
+  td {
+    overflow: hidden;
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+    > .gridgg_cursor {
+      background-color: Canvas;
+      color: CanvasText;
+      outline-offset: -1px;
+      outline: solid lightgray 3px;
+    }
+    > .gridgg_cursor:focus-visible {
+      outline: solid green 3px;
+    }
+    cursor: cell;
+  }
+
+  td.gridgg_selected {
+    background-color: Highlight;
+    color: HighlightText;
+  }
+}

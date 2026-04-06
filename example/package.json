@@ -1,0 +1,13 @@
+{
+  "name": "example",
+  "type": "module",
+  "dependencies": {
+    "gridgg": "file:.."
+  },
+  "devDependencies": {
+    "esbuild": "0.27.1"
+  },
+  "scripts": {
+    "preview": "esbuild src/main.js --sourcemap --outfile=www/main.js --bundle --serve --servedir=. --watch"
+  }
+}
